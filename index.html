@@ -1,0 +1,232 @@
+<html style="scroll-behavior: smooth;">
+    <title>Peter's portfolio</title>
+    <head>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            background-image: linear-gradient(90deg, hsla(204, 72%, 74%, 0.5), transparent), url("yes.png");
+            background-color: #8BC6EC;
+        }
+
+        .First {
+            width: auto;
+            text-align: center;
+            padding-bottom: 20%;
+        }
+
+        .nav {
+            text-align: center;
+            margin: 50px auto auto auto;
+            width: max-content;
+            background-color: transparent;
+            height: 50px;
+        }
+
+        .navList {
+            list-style-type: none;
+            width: auto;
+            margin: auto;
+        }
+
+        .navItem {
+            cursor: pointer;
+            display: inline-block;
+            margin: auto 20px auto 20px;
+            width: max-content;
+            font-family: Arial Rounded MT;
+            color: white;
+            font-size: 20px;
+            transition: all .2s;
+        }
+
+        .navItem:hover {
+            transition: all .2s;
+            box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            margin: auto 50px auto 50px;
+            border-bottom: 5px solid white;
+        }
+
+        .FBody {
+            width: auto;
+        }
+
+        .twolist {
+            list-style-type: none;
+            width: max-content;
+            padding: 0;
+            margin: auto;
+        }
+
+        .round-button-dark {
+            border-radius: 50px;
+            background-color: #2e2e2e;
+            color: white; 
+            font-family: Tahoma;
+            font-size: 30px;
+            margin: auto 150px auto 150px;
+            width: auto;
+            padding: 20px 0 20px 0;
+            cursor: pointer;
+            transition: all .5s;
+        }
+
+        .round-button-dark:hover {
+            transition: all .5s;
+            margin: auto 100px auto 100px;
+        }
+
+        .twolistitem{
+            font-family: Arial;
+            font-size: 100px;
+            color: white;
+            margin: 100px 0px 0px 0px;
+        }
+
+        .twocol {
+            width: 70%;
+            margin: auto;
+            list-style-type: none;
+            font-family: calibri;
+            font-size: 32px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 0;
+        }
+
+        .twocolitem {
+            display: inline-block;
+        }
+
+        .second {
+            background-color: white;
+            box-shadow: -2px 0 20px 0 white;
+            color: black;
+        }
+
+        .second-dark {
+            background-color: #2e2e2e;
+            box-shadow: -2px 0 20px 0 #2e2e2e;
+            color: white;
+            padding-bottom: 40px;
+        }
+
+        .second-blue {
+            background-color: #8BC6EC;
+            box-shadow: -2px 0 20px 0 #8BC6EC;
+            color: white;
+        }
+
+        .titlebar {
+            width: auto;
+            margin: auto auto auto auto;
+            padding-top: 30px;
+            font-family: Century Gothic;
+            font-size: 50px;
+            font-weight: 100;
+            text-align: center;
+        }
+
+        .textbar {
+            margin: auto;
+            padding-top: 50px;
+            color: #686868;
+            font-family: Arial;
+            font-weight: 100;
+            width: 70%;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .cardgroup {
+            padding-top: 50px;
+            list-style-type: none; 
+            margin: auto;
+            width: auto;
+        }
+
+        .card {
+            display: inline-flex;
+            border: .5px solid gray;
+            width: 30%;
+            padding: 0 10px 10px 10px;
+            box-shadow: 0 0 50px 0 black;
+        }
+
+        .cardTitle {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-family: Candara;
+            font-size: 30px;
+            font-weight: 100;
+            color: White;
+        }
+    </style>
+    <body>
+        <div class="First">
+            <div class="nav">
+                <ul class="navList">
+                    <li class="navItem" style="margin-left: 0;">HOME</li>
+                    <li class="navItem">ABOUT</li>
+                    <li class="navItem">CONTACT</li>
+                </ul>
+            </div>
+            <div class="FBody">
+                <ul class="twolist">
+                    <li class="twolistitem">I am Peter</li>
+                    <li class="twolistitem" style="margin-top: 2px; font-size: 25px; color: rgba(255, 255, 255, .5);">Software Developer | Frontend Web Developer</li>
+                    <a href="#about" style="text-decoration: none;"><li class="twolistitem"><div class="round-button-dark">About</div></li></a>  
+                </ul>
+            </div>
+        </div>
+        <div id="about" class="second">
+            <h1 class="titlebar">About Me</h1>
+            <h1 class="textbar">My name is Peter. I am 19 years old. I am currently studying software development at university. I have 3 years of programming experience that includes:
+                <ul style="list-style: none; text-align: center; font-style: italic;">
+                    <li>Roblox scripting</li>
+                    <li>Python general</li>
+                    <li>C++ general</li>
+                    <li>HTML & CSS</li>
+                    <li>Basic Reverse Engineering</li>
+                </ul>
+            </h1>
+        </div>
+        <div class="second-dark">
+            <h1 class="titlebar">Services</h1>
+            <ul class="cardgroup">
+                <li class="card">
+                    <h1 class="cardTitle">Roblox Scripting
+                        <br><br>
+                        Hi
+                    </h1>
+                </li>
+                <li class="card">
+                    <h1 class="cardTitle">Software Development
+                        <br><br>
+                        Hi
+                    </h1>
+                </li>
+                <li class="card">
+                    <h1 class="cardTitle">Frontend Design
+                        <br><br>
+                        Hi
+                    </h1>
+                </li>
+            </ul>
+        </div>
+        <div class="second-blue">
+            <h1 class="titlebar">Showcases</h1>
+            <ul class="twocol">
+                <li class="twocolitem" style="padding-right: 100px;">Perlin noise</li>
+                <li class="twocolitem" style="float: right;">Image here</li>
+            </ul>
+        </div>
+        <div class="second" style="position: relative;">
+            <h1 class="titlebar">Contact</h1>
+            <h1 class="textbar">Email: <a href="mailto:business@peterdoesstuff.xyz" style="text-decoration: none; color:#686868;"><b>business@peterdoesstuff.xyz</b></a><br>Discord: <b>P e t e r#0040</b></h1>
+            <h4 style="position: absolute; bottom: 0; margin: auto; text-align: center; width: auto; font-family: arial; font-size: 20px; color: rgba(128, 128, 128, 0.424)">Copyright ©2022 Peter</h4>
+        </div>
+    </body>
+</html>
