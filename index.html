@@ -25,6 +25,7 @@
         }
 
         .navList {
+            padding: 0;
             list-style-type: none;
             width: auto;
             margin: auto;
@@ -55,20 +56,23 @@
 
         .twolist {
             list-style-type: none;
-            width: max-content;
+            width: auto;
             padding: 0;
             margin: auto;
         }
 
         .round-button-dark {
+            position: absolute;
             border-radius: 50px;
             background-color: #2e2e2e;
             color: white; 
             font-family: Tahoma;
             font-size: 30px;
-            margin: auto 100px auto 100px;
-            width: auto;
-            padding: 20px 0px 20px 0px;
+            width: fit-content;
+            margin: auto;
+            left: 0;
+            right: 0;
+            padding: 20px 30px 20px 30px;
             cursor: pointer;
             transition: all .5s;
         }
@@ -76,14 +80,15 @@
         
         .round-button-dark:hover {
             transition: all .5s;
-            margin: auto 50px auto 50px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         .twolistitem{
             font-family: Arial;
             font-size: 100px;
             color: white;
-            margin: 100px 0px 0px 0px;
+            margin: 100px 0 0 0;
         }
 
         .twocol {
