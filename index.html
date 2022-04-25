@@ -193,7 +193,7 @@
 
         .showcase .txt {
             padding-bottom: 50px;
-            font-size: 20px;
+            font-size: 25px;
             font-family: Tahoma;
             width: fit-content;
         }
@@ -208,7 +208,7 @@
         }
     </style>
     <body onscroll="check()" id="body">
-        <div class="goup"><a href="#home"><img src="images/Up.png" height="100px"></a></div>
+        <div class="goup"><a href="#home"><img src="images/Up.png" height="150px"></a></div>
         <script>
             var checkPos = document.getElementById("body");
             var goup = document.getElementsByClassName("goup")[0];
@@ -265,7 +265,7 @@
                             <br><br>
                             I provide physics-based systems as well as mathematical solutions that can give you the attention you want!
                             <br>
-                            <a href="#More" onclick="load()" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">More stuff</div></a>
+                            <a href="#More" onclick="load()" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 15px 0 15px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">More stuff</div></a>
                         </h1>
                     </li>
                     <li class="card">
@@ -276,7 +276,7 @@
                             <br><br>
                             I do desktop software development. Cross-platform. I can do it in different ways too!
                             <br>
-                            <a href="#More" onclick="load2()" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">More stuff</div></a>
+                            <a href="#More" onclick="load2()" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 15px 0 15px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">More stuff</div></a>
                         </h1>
                     </li>
                     <li class="card">
@@ -287,7 +287,7 @@
                             <br><br>
                             What you see here is what I can do plus more!
                             <br>
-                            <a href="#More" onclick="load3()" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">More stuff</div></a>
+                            <a href="#More" onclick="load3()" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 15px 0 15px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">More stuff</div></a>
                         </h1>
                     </li>
                 </ul>
@@ -295,7 +295,8 @@
         </div>
         <div id="More" class="second-blue">
             <h1 class="titlebar">More stuff</h1>
-            <ul class="showcase" style="font-size: 40px; font-family: arial rounded MT; margin-left: 20%; list-style: none; padding-bottom: 100px;">
+            <ul class="showcase" style="font-size: 40px; font-family: arial rounded MT; list-style: none; padding-bottom: 100px; margin: auto; width: fit-content; padding-left: 0;">
+                <h4>Click on "more stuff" to show more stuff</h3>
             </ul>
         </div>
         <script src="robloxShowcase.js"></script>
@@ -310,10 +311,12 @@
                 var y = document.createElement("ul");
                 y.className = "showcase";
                 y.style.listStyle = "none";
-                y.style.marginLeft = "20%";
                 y.style.paddingBottom = "100px";
                 y.style.fontSize = "40px";
                 y.style.fontFamily = "arial rounded MT";
+                y.style.paddingLeft = "0";
+                y.style.margin = "auto";
+                y.style.width = "fit-content";
 
                 
                 for (var i = 0; i < titlesR.length; i++)
@@ -331,7 +334,6 @@
                     var img = document.createElement("img");
                     img.src = imgsR[i];
                     img.innerText = "Image here"
-                    img.style.width = "500px";
                     document.getElementsByClassName("showcase")[0].appendChild(img);
 
                     var txt = document.createElement("li");
@@ -349,10 +351,12 @@
                 var y = document.createElement("ul");
                 y.className = "showcase";
                 y.style.listStyle = "none";
-                y.style.marginLeft = "20%";
                 y.style.paddingBottom = "100px";
                 y.style.fontSize = "40px";
                 y.style.fontFamily = "arial rounded MT";
+                y.style.paddingLeft = "0";
+                y.style.margin = "auto";
+                y.style.width = "fit-content";
                 
                 for (var i = 0; i < titlesS.length; i++)
                 {
@@ -369,7 +373,6 @@
                     var img = document.createElement("img");
                     img.src = imgsS[i];
                     img.innerText = "Image here"
-                    img.style.width = "500px";
                     document.getElementsByClassName("showcase")[0].appendChild(img);
 
                     var txt = document.createElement("li");
@@ -390,6 +393,9 @@
                 y.style.paddingBottom = "100px";
                 y.style.fontSize = "40px";
                 y.style.fontFamily = "arial rounded MT";
+                y.style.paddingLeft = "0";
+                y.style.margin = "auto";
+                y.style.width = "fit-content";
                 
                 
                 for (var i = 0; i < titlesF.length; i++)
@@ -407,7 +413,6 @@
                     var img = document.createElement("img");
                     img.src = imgsF[i];
                     img.innerText = "Image here"
-                    img.style.width = "500px";
                     document.getElementsByClassName("showcase")[0].appendChild(img);
 
                     var txt = document.createElement("li");
