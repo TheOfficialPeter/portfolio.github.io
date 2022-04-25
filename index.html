@@ -5,7 +5,7 @@
     <style>
         body {
             margin: 0;
-            background-image: linear-gradient(90deg, hsla(204, 72%, 74%, 0.5), transparent), url("yes.png");
+            background-image: linear-gradient(90deg, hsla(204, 72%, 74%, 0.5), transparent), url("images/yes.png");
             background-color: #8BC6EC;
             background-size: 100%;
         }
@@ -66,9 +66,9 @@
             color: white; 
             font-family: Tahoma;
             font-size: 30px;
-            margin: auto 150px auto 150px;
+            margin: auto 100px auto 100px;
             width: auto;
-            padding: 20px 0 20px 0;
+            padding: 20px 0px 20px 0px;
             cursor: pointer;
             transition: all .5s;
         }
@@ -76,7 +76,7 @@
         
         .round-button-dark:hover {
             transition: all .5s;
-            margin: auto 100px auto 100px;
+            margin: auto 50px auto 50px;
         }
 
         .twolistitem{
@@ -198,7 +198,7 @@
                 <ul class="twolist">
                     <li class="twolistitem">I am Peter</li>
                     <li class="twolistitem" style="margin-top: 2px; font-size: 25px; color: rgba(255, 255, 255, .5);">Software Developer | Frontend Web Developer</li>
-                    <a href="#about" style="text-decoration: none;"><li class="twolistitem"><div class="round-button-dark">About</div></li></a>  
+                    <a href="#about" style="text-decoration: none;"><li class="twolistitem"><div class="round-button-dark">Show me the stuff</div></li></a>  
                 </ul>
             </div>
         </div>
@@ -215,59 +215,170 @@
             </h1>
         </div>
         <div class="second-dark">
-            <h1 class="titlebar">Services</h1>
+            <h1 class="titlebar">Stuff I do</h1>
             <div style="margin: auto; width: fit-content">
                 <ul class="cardgroup">
                     <li class="card">
                         <h1 class="cardTitle">
-                            <img src="Roblox.png" style="height: 100px;">
+                            <img src="images/Roblox.png" style="height: 100px;">
                             <br>
                             <b>Roblox Scripting</b>
                             <br><br>
                             I provide physics-based systems as well as mathematical solutions that can give you the attention you want!
                             <br>
-                            <a href="#Contact" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">Show more</div></a>
+                            <a href="#More" onclick="load()" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">More stuff</div></a>
                         </h1>
                     </li>
                     <li class="card">
                         <h1 class="cardTitle">
-                            <img src="Software.png" style="height: 100px;">
+                            <img src="images/Software.png" style="height: 100px;">
                             <br>
                             <b>Software Development</b>
                             <br><br>
                             I do desktop software development. Cross-platform. I can do it in different ways too!
                             <br>
-                            <a href="#Contact" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">Show more</div></a>
+                            <a href="#More" onclick="load2()" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">More stuff</div></a>
                         </h1>
                     </li>
                     <li class="card">
                         <h1 class="cardTitle">
-                            <img src="Frontend.png" style="height: 100px;">
+                            <img src="images/Frontend.png" style="height: 100px;">
                             <br>
                             <b>Frontend design</b>
                             <br><br>
                             What you see here is what I can do plus more!
                             <br>
-                            <a href="#Contact" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">Show more</div></a>
+                            <a href="#More" onclick="load3()" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">More stuff</div></a>
                         </h1>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="second-blue">
-            <h1 class="titlebar">Showcases</h1>
+        <div id="More" class="second-blue">
+            <h1 class="titlebar">More stuff</h1>
             <ul class="showcase" style="font-size: 40px; font-family: arial rounded MT; margin-left: 20%; list-style: none; padding-bottom: 100px;">
-                <li class="title">Perlin noise</li>
-                <li class="img"><img src="perlin.png" height="200px"></li>
-                <li class="txt">Algorithm used to create randomized noise.</li>
-                <li class="title">Mathematical graphs</li>
-                <li class="img"><img src="./Math.png" height="200px"></li>
-                <li class="txt">graph functions used to make pretty interesting patterns</li>
-                <li class="title">3D Cellular automaton</li>
-                <li class="img"></li>
-                <li class="txt"></li>
             </ul>
         </div>
+        <script src="robloxShowcase.js"></script>
+        <script src="softwareShowcase.js"></script>
+        <script src="frontShowcase.js"></script>
+        <script>
+            function load()
+            {
+                var x = document.getElementsByClassName("showcase")[0];
+                x.innerHTML = "";
+
+                var y = document.createElement("ul");
+                y.className = "showcase";
+                y.style.listStyle = "none";
+                y.style.marginLeft = "20%";
+                y.style.paddingBottom = "100px";
+                y.style.fontSize = "40px";
+                y.style.fontFamily = "arial rounded MT";
+
+                
+                for (var i = 0; i < titlesR.length; i++)
+                {
+                    var title = document.createElement("li");
+                    title.className = "title";
+                    title.innerText = titlesR[i];
+                    document.getElementsByClassName("showcase")[0].appendChild(title);
+
+                    var imgli = document.createElement("li");
+                    imgli.className = "img";
+                    imgli.id = "img" + i;
+                    document.getElementsByClassName("showcase")[0].appendChild(title);
+                    
+                    var img = document.createElement("img");
+                    img.src = imgsR[i];
+                    img.innerText = "Image here"
+                    img.style.width = "500px";
+                    document.getElementsByClassName("showcase")[0].appendChild(img);
+
+                    var txt = document.createElement("li");
+                    txt.className = "txt";
+                    txt.innerText = txtR[i];
+                    document.getElementsByClassName("showcase")[0].appendChild(txt);
+                }
+            }
+            
+            function load2()
+            {
+                var x = document.getElementsByClassName("showcase")[0];
+                x.innerHTML = "";
+
+                var y = document.createElement("ul");
+                y.className = "showcase";
+                y.style.listStyle = "none";
+                y.style.marginLeft = "20%";
+                y.style.paddingBottom = "100px";
+                y.style.fontSize = "40px";
+                y.style.fontFamily = "arial rounded MT";
+                
+                for (var i = 0; i < titlesS.length; i++)
+                {
+                    var title = document.createElement("li");
+                    title.className = "title";
+                    title.innerText = titlesS[i];
+                    document.getElementsByClassName("showcase")[0].appendChild(title);
+
+                    var imgli = document.createElement("li");
+                    imgli.className = "img";
+                    imgli.id = "img" + i;
+                    document.getElementsByClassName("showcase")[0].appendChild(title);
+                    
+                    var img = document.createElement("img");
+                    img.src = imgsS[i];
+                    img.innerText = "Image here"
+                    img.style.width = "500px";
+                    document.getElementsByClassName("showcase")[0].appendChild(img);
+
+                    var txt = document.createElement("li");
+                    txt.className = "txt";
+                    txt.innerText = txtS[i];
+                    document.getElementsByClassName("showcase")[0].appendChild(txt);
+                }
+            }
+
+            function load3()
+            {
+                var x = document.getElementsByClassName("showcase")[0];
+                x.innerHTML = "";
+
+                var y = document.createElement("ul");
+                y.className = "showcase";
+                y.style.listStyle = "none";
+                y.style.marginLeft = "20%";
+                y.style.paddingBottom = "100px";
+                y.style.fontSize = "40px";
+                y.style.fontFamily = "arial rounded MT";
+                
+                
+                for (var i = 0; i < titlesF.length; i++)
+                {
+                    var title = document.createElement("li");
+                    title.className = "title";
+                    title.innerText = titlesF[i];
+                    document.getElementsByClassName("showcase")[0].appendChild(title);
+
+                    var imgli = document.createElement("li");
+                    imgli.className = "img";
+                    imgli.id = "img" + i;
+                    document.getElementsByClassName("showcase")[0].appendChild(title);
+                    
+                    var img = document.createElement("img");
+                    img.src = imgsF[i];
+                    img.innerText = "Image here"
+                    img.style.width = "500px";
+                    document.getElementsByClassName("showcase")[0].appendChild(img);
+
+                    var txt = document.createElement("li");
+                    txt.className = "txt";
+                    txt.innerText = txtF[i];
+                    document.getElementsByClassName("showcase")[0].appendChild(txt);
+                }
+            }
+        </script>
         <div class="second" id="Contact" style="position: relative; height: 250px; background: transparent;">
             <h1 class="titlebar" style="color: white;">Contact</h1>
             <h1 class="textbar" style="color: white;"><b>Email:</b> <a href="mailto:business@peterdoesstuff.xyz" style="text-decoration: none; color:white;">business@peterdoesstuff.xyz</a><br><b>Discord:</b> P e t e r#0040</h1>
