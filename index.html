@@ -7,6 +7,7 @@
             margin: 0;
             background-image: linear-gradient(90deg, hsla(204, 72%, 74%, 0.5), transparent), url("yes.png");
             background-color: #8BC6EC;
+            background-size: 100%;
         }
 
         .First {
@@ -97,8 +98,7 @@
         }
 
         .twocolitem {
-            display: inline-block;
-            height: 75vh;
+            height: 200px;
         }
 
         .second {
@@ -115,7 +115,7 @@
         }
 
         .second-blue {
-            background: linear-gradient(130deg, #8BC6EC, #189ef8);
+            background: linear-gradient(130deg, #b6d8ef, #2074ab);
             box-shadow: 2px 0 20px 0 #0099ff;
             color: white;
         }
@@ -144,15 +144,15 @@
 
         .cardgroup {
             padding-top: 50px;
+            padding-left: 0;
             list-style-type: none; 
-            margin: auto;
         }
 
         .card {
             display: inline-flex;
             border: .5px solid gray;
-            width: 30%;
-            height: 75vh;
+            width: 300px;
+            height: 550px;
             padding: 0 10px 10px 10px;
             box-shadow: 0 0 50px 0 black;
         }
@@ -166,6 +166,24 @@
             font-size: 30px;
             font-weight: 100;
             color: White;
+        }
+
+        .showcase .title {
+            padding-bottom: 20px;
+            text-shadow: 0 0 100px 0 white;
+        }
+
+        .showcase .img {
+            padding-bottom: 10px;
+            height: fit-content;
+            width: fit-content;
+        }
+
+        .showcase .txt {
+            padding-bottom: 50px;
+            font-size: 20px;
+            font-family: Tahoma;
+            width: fit-content;
         }
     </style>
     <body>
@@ -198,70 +216,59 @@
         </div>
         <div class="second-dark">
             <h1 class="titlebar">Services</h1>
-            <ul class="cardgroup">
-                <li class="card">
-                    <h1 class="cardTitle">
-                        <img src="Roblox.png" style="height: 100px;">
-                        <br>
-                        <b>Roblox Scripting</b>
-                        <br><br>
-                        I provide physics-based systems as well as mathematical solutions that can give you the attention you want!
-                        <br>
-                        <a href="#Contact" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">Show more</div></a>
-                    </h1>
-                </li>
-                <li class="card">
-                    <h1 class="cardTitle">
-                        <img src="Software.png" style="height: 100px;">
-                        <br>
-                        <b>Software Development</b>
-                        <br><br>
-                        I do desktop software development. Cross-platform. I can do it in different ways too!
-                        <br>
-                        <a href="#Contact" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">Show more</div></a>
-                    </h1>
-                </li>
-                <li class="card">
-                    <h1 class="cardTitle">
-                        <img src="Frontend.png" style="height: 100px;">
-                        <br>
-                        <b>Frontend design</b>
-                        <br><br>
-                        What you see here is what I can do plus more.
-                        <br>
-                        <a href="#Contact" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">Show more</div></a>
-                    </h1>
-                </li>
-            </ul>
+            <div style="margin: auto; width: fit-content">
+                <ul class="cardgroup">
+                    <li class="card">
+                        <h1 class="cardTitle">
+                            <img src="Roblox.png" style="height: 100px;">
+                            <br>
+                            <b>Roblox Scripting</b>
+                            <br><br>
+                            I provide physics-based systems as well as mathematical solutions that can give you the attention you want!
+                            <br>
+                            <a href="#Contact" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">Show more</div></a>
+                        </h1>
+                    </li>
+                    <li class="card">
+                        <h1 class="cardTitle">
+                            <img src="Software.png" style="height: 100px;">
+                            <br>
+                            <b>Software Development</b>
+                            <br><br>
+                            I do desktop software development. Cross-platform. I can do it in different ways too!
+                            <br>
+                            <a href="#Contact" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">Show more</div></a>
+                        </h1>
+                    </li>
+                    <li class="card">
+                        <h1 class="cardTitle">
+                            <img src="Frontend.png" style="height: 100px;">
+                            <br>
+                            <b>Frontend design</b>
+                            <br><br>
+                            What you see here is what I can do plus more!
+                            <br>
+                            <a href="#Contact" style="text-decoration: none; color: #2e2e2e;"><div style="font-family: arial; font-size: 25px; padding: 5px 0 5px 0; background-color: white; color: #2e2e2e; margin: auto; width: 200px; border-radius: 50px; cursor: pointer; position: absolute; bottom: 0; left: 0; right: 0; box-shadow: 0 0 10px 0 gray">Show more</div></a>
+                        </h1>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="second-blue">
             <h1 class="titlebar">Showcases</h1>
-            <ul class="twocol">
-                <li class="twocolitem" style="width: 50%;">
-                    <b>Perlin Noise</b>
-                    <br>
-                    It's a random alorithm that generates a smooth noise which can be used to create anything that has to be random.
-                </li>
-                <li class="twocolitem" style="float: right;"><img src="perlin.png" style="width: 400px; border-radius: 5px;"></li>
-            </ul>
-            <ul class="twocol">
-                <li class="twocolitem" style="float: left;"><img src="Math.png" style="height: 300px; border-radius: 5px;"></li>
-                <li class="twocolitem" style="width: 50%; float: right;">
-                    <b>Graph equations</b>
-                    <br>
-                    I use basic graph equations to make interesting patterns.    
-                </li>
-            </ul>
-            <ul class="twocol">
-                <li class="twocolitem" style="width: 50%;">
-                    <b>3D Cellular automaton</b>
-                    <br>
-                    It's an algorithm that is used to make cells or parts interactable with one another depending on their properties and states. 
-                </li>
-                <li class="twocolitem" style="float: right;">[ Place Image Here ]</li>
+            <ul class="showcase" style="font-size: 40px; font-family: arial rounded MT; margin-left: 20%; list-style: none; padding-bottom: 100px;">
+                <li class="title">Perlin noise</li>
+                <li class="img"><img src="perlin.png" height="200px"></li>
+                <li class="txt">Algorithm used to create randomized noise.</li>
+                <li class="title">Mathematical graphs</li>
+                <li class="img"><img src="./Math.png" height="200px"></li>
+                <li class="txt">graph functions used to make pretty interesting patterns</li>
+                <li class="title">3D Cellular automaton</li>
+                <li class="img"></li>
+                <li class="txt"></li>
             </ul>
         </div>
-        <div class="second" id="Contact" style="position: relative; height: 50vh; background: transparent;">
+        <div class="second" id="Contact" style="position: relative; height: 250px; background: transparent;">
             <h1 class="titlebar" style="color: white;">Contact</h1>
             <h1 class="textbar" style="color: white;"><b>Email:</b> <a href="mailto:business@peterdoesstuff.xyz" style="text-decoration: none; color:white;">business@peterdoesstuff.xyz</a><br><b>Discord:</b> P e t e r#0040</h1>
         </div>
