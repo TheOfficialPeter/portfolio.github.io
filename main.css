@@ -1,0 +1,101 @@
+body {
+background-color: #0C0C0C;
+zoom: 50%;
+}
+
+.back {
+position: absolute;
+width: 2674px;
+height: 6834px;
+left: 0px;
+top: 0px;
+}
+
+.subf {
+position: absolute;
+width: 673px;
+height: 49px;
+left: 273px;
+top: 587px;
+
+font-family: 'Calibri';
+font-style: italic;
+font-weight: 400;
+font-size: 40px;
+line-height: 49px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+color: rgba(255, 255, 255, 0.5);
+}
+
+.big {
+position: absolute;
+width: 1296px;
+height: 5366.3px;
+left: 75px;
+top: 820.18px;
+background-image: url("big.png");
+}
+
+.nav2 {
+position: absolute;
+width: 303px;
+height: 118px;
+right: 126px;
+top: 82px;
+
+font-family: 'Freestyle Script';
+font-style: normal;
+font-weight: 400;
+font-size: 100px;
+line-height: 118px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+cursor: pointer;
+z-index: 9999;
+
+}
+
+.goup {
+position: absolute;
+width: 113.38px;
+height: 113.38px;
+left: 2450px;
+top: 6394px;
+}
+
+.contact {
+position: absolute;
+width: 729px;
+height: 215px;
+left: 75px;
+top: 6293px;
+}
+
+.nav2:hover {
+color: #FF4365;
+}
+
+.first {
+position: absolute;
+width: 867px;
+height: 230px;
+left: 266px;
+top: 271px;
+
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 200px;
+line-height: 230px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
