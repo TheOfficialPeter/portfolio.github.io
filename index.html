@@ -178,10 +178,17 @@
             text-shadow: 0 0 100px 0 white;
         }
 
-        .showcase .img {
-            padding-bottom: 10px;
+        .showcase img {
+            border-radius: 10px;
+            margin: auto auto 10px auto;
             height: fit-content;
             width: fit-content;
+            transition: all .2s;
+        }
+
+        .showcase img:hover {
+            transition: all .2s;
+            box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2);
         }
 
         .showcase .txt {
@@ -190,9 +197,36 @@
             font-family: Tahoma;
             width: fit-content;
         }
+
+        .goup {
+            position: fixed;
+            right: 10px;
+            bottom: 100px;
+            z-index: 99999;
+            opacity: 0;
+            transition: all .2s;
+        }
     </style>
-    <body>
-        <div class="First">
+    <body onscroll="check()" id="body">
+        <div class="goup"><a href="#home"><img src="images/Up.png" height="100px"></a></div>
+        <script>
+            var checkPos = document.getElementById("body");
+            var goup = document.getElementsByClassName("goup")[0];
+
+            function check()
+            {
+                if (checkPos.scrollTop > 700)
+                {
+                    goup.style.opacity = 1;
+                }
+                else
+                {
+                    goup.style.opacity = 0;
+                }
+            }
+            
+        </script>
+        <div id="home" class="First">
             <div class="nav">
                 <ul class="navList">
                     <a href="#about" style="text-decoration: none; color: white;"><li class="navItem">ABOUT</li></a>
@@ -353,7 +387,6 @@
                 var y = document.createElement("ul");
                 y.className = "showcase";
                 y.style.listStyle = "none";
-                y.style.marginLeft = "20%";
                 y.style.paddingBottom = "100px";
                 y.style.fontSize = "40px";
                 y.style.fontFamily = "arial rounded MT";
