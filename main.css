@@ -1,22 +1,22 @@
 body {
-background-color: #0C0C0C;
+background-color: #1d1d1d;
 zoom: 50%;
 }
 
 .back {
 position: absolute;
 width: 2674px;
-height: 6834px;
+height: 5114px;
 left: 0px;
 top: 0px;
 }
 
 .subf {
 position: absolute;
-width: 673px;
+width: 867px;
 height: 49px;
-left: 273px;
-top: 587px;
+left: 128px;
+top: 630px;
 
 font-family: 'Calibri';
 font-style: italic;
@@ -28,65 +28,47 @@ line-height: 49px;
 text-transform: capitalize;
 
 color: rgba(255, 255, 255, 0.5);
+
 }
 
 .big {
 position: absolute;
-width: 1296px;
-height: 5366.3px;
-left: 75px;
-top: 820.18px;
+width: 1734px;
+height: 3461.37px;
+left: 128px;
+top: 958px;
 background-image: url("big.png");
 }
 
-.nav2 {
-position: absolute;
-width: 303px;
-height: 118px;
-right: 126px;
-top: 82px;
-
-font-family: 'Freestyle Script';
-font-style: normal;
-font-weight: 400;
-font-size: 100px;
-line-height: 118px;
-/* identical to box height */
-
-text-transform: capitalize;
-
-color: #FFFFFF;
-cursor: pointer;
-z-index: 9999;
-
+.black {
+    transition: all .2s;
 }
 
 .goup {
-position: absolute;
-width: 113.38px;
-height: 113.38px;
-left: 2450px;
-top: 6394px;
+position: fixed;
+width: 151.38px;
+height: 151.38px;
+right: 100px;
+bottom: 200px;
+opacity: 0;
+transition: all .5s;
 }
 
 .contact {
 position: absolute;
 width: 729px;
-height: 215px;
-left: 75px;
-top: 6293px;
-}
+height: 217px;
+left: 128px;
+top: 4587px;
 
-.nav2:hover {
-color: #FF4365;
 }
 
 .first {
 position: absolute;
-width: 867px;
+width: 1424px;
 height: 230px;
-left: 266px;
-top: 271px;
+left: 128px;
+top: 308px;
 
 font-family: 'Times New Roman';
 font-style: normal;
