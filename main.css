@@ -1,83 +1,70 @@
 body {
-background-color: #111111;
-zoom: 50%;
+	background-color: #2e2e2e;
 }
 
-.back {
-position: absolute;
-width: 100%;
-height: 5114px;
-left: 0px;
-top: 0px;
+.card {
+	box-shadow: 0 0 20px black;
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	padding: 10px 20px 10px 20px; 
+	background-color: white;
+	top: calc(50% - 210px/2);
+	left: calc(50% - 320px/2);
+	border-radius: 10px;
 }
 
-.subf {
-position: absolute;
-width: 867px;
-height: 49px;
-left: 128px;
-top: 630px;
-
-font-family: 'Calibri';
-font-style: italic;
-font-weight: 400;
-font-size: 40px;
-line-height: 49px;
-/* identical to box height */
-
-text-transform: capitalize;
-
-color: rgba(255, 255, 255, 0.5);
-
+.card .title{
+	margin-left: 20px;
+	color: black;
+	font-family: Arial Rounded MT;
+	font-size: 30;
 }
 
-.big {
-position: absolute;
-width: 1734px;
-height: 3489px;
-left: 128px;
-top: 958px;
-background-image: url("big.png");
+.underline {
+	padding-bottom: 2px;
+	padding-top: 2px;
+	background-color: black;
+	position: absolute;
+	left: 120;
+	right: 120;
+	top: 75;
+	border-radius: 20px;
 }
 
-.black {
-    transition: all .2s;
+.card .content{
+	text-align: center;
+	margin: 25px 20px 0 20px;
+	font-color: gray;
+	font-family: monospace;
+	font-size: 15px;
 }
 
-.goup {
-position: fixed;
-width: 151.38px;
-height: 151.38px;
-right: 100px;
-bottom: 200px;
-opacity: 0;
-transition: all .5s;
+.card .buttongroup {
+	text-align: center;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
-.contact {
-position: absolute;
-width: 729px;
-height: 217px;
-left: 128px;
-top: 4587px;
-
+.card .button {
+	border-radius: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+	border: 2px solid #2e2e2e;
+	color: #2e2e2e;
+	font-size: 15px;
+	padding: 10px 15px 10px 15px;
+	font-family: Tahoma;
+	transition: all .2s;
+	font-weight: 200;
 }
 
-.first {
-position: absolute;
-width: 1424px;
-height: 230px;
-left: 128px;
-top: 308px;
-
-font-family: 'Times New Roman';
-font-style: normal;
-font-weight: 400;
-font-size: 200px;
-line-height: 230px;
-/* identical to box height */
-
-text-transform: capitalize;
-
-color: #FFFFFF;
+.card .button:hover {
+	transition: all .2s;
+	background-color: #2e2e2e;
+	color: white;
 }
