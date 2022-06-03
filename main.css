@@ -30,7 +30,7 @@ div .Image {
 .card .title{
 	margin-left: 20px;
 	color: black;
-	font-family: Arial Rounded MT;
+	font-family: Arial;
 	font-size: 30;
 }
 
@@ -60,7 +60,7 @@ div .Image {
 	color: #2e2e2e;
 	font-size: 15px;
 	padding: 10px 15px 10px 15px;
-	font-family: Tahoma;
+	font-family: Arial;
 	transition: all .2s;
 	font-weight: 200;
 }
