@@ -1,6 +1,5 @@
 var lastClick = "";
 var loaded = false;
-var snowBool = false;
 
 function svg() {
 	//grow the svg
@@ -12,20 +11,6 @@ function svg() {
 		loaded = true;
 	}, 1000);
 }
-
-
-function addBubble(event) {
-	if (loaded == true && snowBool == true)
-	{
-		var ClientX = event.clientX;
-		var ClientY = event.clientY;
-			
-		var body = document.getElementById('home');
-		body.innerHTML = body.innerHTML + "<div style='position: fixed; left: "+ClientX+"; top: "+ClientY+"; width: 10; height: 10; border-radius: 100px; background-color: white'></div>";
-	}
-}
-
-document.addEventListener("click", addBubble);
 
 function onClickClass(element) {
 	var box = document.getElementById("Box");
@@ -50,3 +35,5 @@ function onClickClass(element) {
 		box.style.transition = "all 1s";
 	}
 }
+
+window.onload = svg();

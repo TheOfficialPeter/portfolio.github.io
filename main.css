@@ -37,7 +37,7 @@ div .Image {
 .card .content{
 	text-align: center;
 	margin: 25px 20px 0 20px;
-	font-color: gray;
+	color: #2e2e2e;
 	font-family: monospace;
 	font-size: 15px;
 }
@@ -57,12 +57,12 @@ div .Image {
 	margin-right: 5px;
 	cursor: pointer;
 	border: 2px solid #2e2e2e;
-	color: #2e2e2e;
+	color: black;
 	font-size: 15px;
 	padding: 10px 15px 10px 15px;
 	font-family: Arial;
 	transition: all .2s;
-	font-weight: 200;
+	font-weight: 600;
 }
 
 .card .button:hover {
