@@ -1,9 +1,3 @@
-<?xml version="1.0" standalone="no"?>
-<svg id="Polygon1" width="75" height="87" viewBox="0 0 75 87" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
-<path d="M75 43.5L0.749996 86.3683L0.75 0.631741L75 43.5Z" fill="#E2DE7A" stroke-dasharray="0,0,0,257.2096252441406"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="3.125s" values="0,0,0,257.2096252441406; 
-          0,128.6048126220703,128.6048126220703,0; 
-          257.2096252441406,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
-<path d="M3.25 4.96187L70 43.5L3.25 82.0381L3.25 4.96187Z" stroke="black" stroke-opacity="0.25" stroke-width="5" stroke-dasharray="0,0,0,231.22874450683594"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="3.125s" values="0,0,0,231.22874450683594; 
-          0,115.61437225341797,115.61437225341797,0; 
-          231.22874450683594,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
-<setting>{"type":"direct","speed":16,"random":1,"shift":1,"size":1,"rupture":50}</setting></svg>
+<svg width="79" height="90" viewBox="0 0 79 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.48043 88.5264C5.13961 90.4727 0.948442 88.0529 0.963559 84.1866L1.27068 5.63438C1.2857 1.79409 5.44483 -0.596347 8.77064 1.32381L76.3381 40.3339C79.6639 42.2541 79.6733 47.0512 76.355 48.9844L8.48043 88.5264Z" fill="#FFE27C"/>
+</svg>

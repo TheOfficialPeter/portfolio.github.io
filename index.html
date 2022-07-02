@@ -6,120 +6,217 @@ background-color: #d9ffff;
 color: white;
 }
 	
-#grass1 {
-position: absolute;
-height: 134px;
-left: 0%;
-right: 0%;
-bottom: 172px;
-background: #8CD76A;
-}
-
-#bar1 {
-position: absolute;
-width: 22px;
-height: 1549px;
-left: calc(50% - 22px/2 - 331px);
-top: calc(50% - 1549px/2 - 1169.5px);
-background: #9F9F9F;
-}
-
-#bar2 {
-position: absolute;
-width: 22px;
-height: 1320px;
-left: calc(50% - 22px/2 + 308px);
-top: calc(50% - 1320px/2 - 1055px);
-background: #9F9F9F;
-}
-
-#bar3 {
-position: absolute;
-width: 22px;
-height: 2483px;
-right: 133px;
-top: calc(50% - 2483px/2 - 1548.5px);
-background: #9F9F9F;}
-
-#sign2 {
-box-sizing: border-box;
-position: absolute;
-width: 157px;
-height: 175px;
-right: 65px;
-top: calc(50% - 175px/2 - 219.5px);
-background: #8E715C;
-border: 8px solid #BC977C;
-border-radius: 38px;
-}
-
-#play {
-box-sizing: border-box;
-position: absolute;
-width: 99px;
-height: 99px;
-right: 90.29px;
-top: calc(50% - 99px/2 - 214.5px);
-}
-
-#sign {
-box-sizing: border-box;
-position: absolute;
-width: 836px;
-height: 350px;
-left: calc(50% - 836px/2);
-top: calc(50% - 350px/2 - 220px);
-background: #8E715C;
-border: 10px solid #BC977C;
-border-radius: 38px;
-}
-
-#sign-text {
-position: absolute;
-width: 661px;
-height: 290px;
-left: calc(50% - 661px/2 - 11.5px);
-top: calc(50% - 290px/2 - 199px);
-font-family: 'Arial';
-font-style: normal;
-font-weight: 300;
-font-size: 100px;
-line-height: 121px;
-text-align: center;
-color: #BC977C;
-}
-
-#grass2 {
-position: absolute;
-height: 35px;
-left: 0%;
-right: 0%;
-bottom: 137px;
-background: #74AE59;
-}
-
-#dirt1 {
-position: absolute;
-height: 137px;
-left: 0%;
-right: 0%;
-bottom: 0px;
-background: #573436;
-}
-
 </style>
 <body>
-	<script>
-	</script>
-	<span id="grass1"></span>
-	<span id="grass2"></span>
-	<span id="dirt1"></span>
-	<span id="sign"></span>
-	<span id="sign-text">P I E T E R<br>M A L A N</span>
-	<span id="bar1"></span>
-	<span id="bar2"></span>
-	<span id="bar3"></span>
-	<span id="sign2"></span>
-	<img src="play.svg" id="play"></span>
+<script>
+	// load scene
+	function loadMenu(){
+		
+		// floor
+		var grass = document.createElement("div");
+		var grassShadow = document.createElement("div");
+		var dirt = document.createElement("div");
+
+		// menu blocks 
+		var board = document.createElement("div");
+		var boardText = document.createElement("div");
+		var board2 = document.createElement("div");
+		var playBtn = document.createElement("img");
+		var boards = [board, board2];
+	
+		// bars
+		var bar = document.createElement("div");
+		var bar2 = document.createElement("div");
+		var bar3 = document.createElement("div");
+		var bars = [bar, bar2, bar3];
+
+		// add ids
+
+		// styling
+		grass.style = `
+	   					position: absolute;
+						height: 134px;
+						left: 0;
+						right: 0;
+						bottom: 172px;
+
+						background: #8CD76A;`
+		;
+		grassShadow.style = `
+	   					position: absolute;
+						height: 35px;
+						left: 0;
+						right: 0;
+						bottom: 137.01px;
+
+						background: #74AE59;`
+		;
+		dirt.style = `
+						position: absolute;
+						height: 137px;
+						left: 0;
+						right: 0;
+						bottom: 0;
+
+						background: #573436;`
+		;
+		board.style = `
+						box-sizing: border-box;
+
+						position: absolute;
+						width: 836px;
+						height: 350px;
+						left: calc(50% - 836px/2 + 3.37px);
+						top: calc(50% - 350px/2 - 218.88px);
+
+						background: #8E715C;
+						border: 10px solid #BC977C;
+						border-radius: 38px;`
+		;
+		boardText.style = `
+						position: absolute;
+						width: 661px;
+						height: 290px;
+						left: calc(50% - 661px/2 - 8.32px);
+						top: calc(50% - 290px/2 - 197.6px);
+
+						font-family: 'Arial';
+						font-style: normal;
+						font-weight: 300;
+						font-size: 100px;
+						line-height: 121px;
+						text-align: center;
+
+						color: #BC977C;`
+		;
+		board2.style = `
+						box-sizing: border-box;
+
+						position: absolute;
+						width: 157px;
+						height: 175px;
+						right: 61.97px;
+						top: calc(50% - 175px/2 - 214.98px);
+
+						background: #8E715C;
+						border: 8px solid #BC977C;
+						border-radius: 38px;`
+		;
+		playBtn.style = `
+						position: absolute;
+						width: 110px;
+						height: 111px;
+						right: 99px;
+						top: calc(50% - 111px/2 - 200px);
+	   					margin-right: 0;
+
+						transform: rotate(120deg);
+						transition: all .2s`
+		;
+		bar.style = `
+						position: absolute;
+						width: 22px;
+						height: 1549px;
+						left: calc(50% - 22px/2 - 321.88px);
+						top: calc(50% - 1549px/2 - 1168.09px);
+
+						background: #9F9F9F;`
+		;
+		bar2.style = `
+						position: absolute;
+						width: 22px;
+						height: 1320px;
+						left: calc(50% - 22px/2 + 308px);
+						top: calc(50% - 1320px/2 - 1052px);
+
+						background: #9F9F9F;
+					`
+		;
+		bar3.style = `
+						position: absolute;
+						width: 22px;
+						height: 2483px;
+						right: 133px;
+						top: calc(50% - 2483px/2 - 1542px);
+
+						background: #9F9F9F;
+					`
+		;
+	
+		boardText.innerHTML = "P I E T E R<br> M A L A N";
+		playBtn.src = "play.svg";
+
+		// add animations
+		playBtn.onmouseover = function(){
+			playBtn.style.marginRight = "10px";
+			playBtn.style.cursor = "pointer";
+			playBtn.style.transition = "all .2s";
+		}
+
+		playBtn.onmouseleave = function(){
+			playBtn.style.marginRight = "0";
+		}
+
+		// start game function
+		function startGame(){
+			console.log("play");
+			var marginStart = "100px";
+			var transitionStart = "all .9s";
+
+			board.style.marginTop = marginStart;
+			board2.style.marginTop = marginStart;
+			boardText.style.marginTop = marginStart;
+			playBtn.style.marginTop = marginStart;
+			bar.style.marginTop = marginStart;
+			bar2.style.marginTop = marginStart;
+			bar3.style.marginTop = marginStart;
+
+			board.style.transition = transitionStart;
+			board2.style.transition = transitionStart;
+			boardText.style.transition = transitionStart;
+			playBtn.style.transition = transitionStart;
+			bar.style.transition = transitionStart;
+			bar2.style.transition = transitionStart;
+			bar3.style.transition = transitionStart;
+
+			setTimeout(function(){
+					marginStart = "-2000px";
+					board.style.marginTop = marginStart;
+					board2.style.marginTop = marginStart;
+					boardText.style.marginTop = marginStart;
+					playBtn.style.marginTop = marginStart;
+					bar.style.marginTop = marginStart;
+					bar2.style.marginTop = marginStart;
+					bar3.style.marginTop = marginStart;
+
+					var marginFloor = "100px";
+					grass.style.marginBottom = marginFloor;
+					grassShadow.style.marginBottom = marginFloor;
+					dirt.style.paddingBottom = marginFloor;
+					
+					grass.style.transition = transitionStart;
+					grassShadow.style.transition = transitionStart;
+					dirt.style.transition = transitionStart;
+			}, 500);
+		}
+
+		// game start on click
+		playBtn.onclick = function(){startGame();}
+
+		// append the elements
+		document.body.appendChild(grass);
+		document.body.appendChild(grassShadow);
+		document.body.appendChild(dirt);
+		document.body.appendChild(board);
+		document.body.appendChild(boardText);
+		document.body.appendChild(board2);
+		document.body.appendChild(playBtn);
+		document.body.appendChild(bar);
+		document.body.appendChild(bar2);
+		document.body.appendChild(bar3);
+	}
+
+	window.onload = loadMenu();
+</script>
 </body>
 </html>
