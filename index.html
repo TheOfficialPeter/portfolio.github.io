@@ -11,6 +11,9 @@ color: white;
 <script>
 	// load scene
 	function loadMenu(){
+
+		// ** REMOVE AT END** 
+		var wip = document.createElement("div");
 		
 		// floor
 		var grass = document.createElement("div");
@@ -21,18 +24,29 @@ color: white;
 		var board = document.createElement("div");
 		var boardText = document.createElement("div");
 		var board2 = document.createElement("div");
+		var board3 = document.createElement("div");
 		var playBtn = document.createElement("img");
-		var boards = [board, board2];
+		var boards = [board, board2, board3];
 	
 		// bars
 		var bar = document.createElement("div");
 		var bar2 = document.createElement("div");
 		var bar3 = document.createElement("div");
-		var bars = [bar, bar2, bar3];
-
-		// add ids
+		var bar4 = document.createElement("div");
+		var bars = [bar, bar2, bar3, bar4];
 
 		// styling
+		wip.style = `
+	   					position: absolute;
+	   					z-index: 9999999;
+						bottom: 0;
+	   					left: 0;
+	   					color: white;
+	   					font-size: 30px;
+	   					text-shadow: -1px -1px 0px black, 1px 1px 0 black;
+	  					opacity: 20%;
+	   					font-family: Arial;
+	   				`
 		grass.style = `
 	   					position: absolute;
 						height: 134px;
@@ -102,6 +116,26 @@ color: white;
 						border: 8px solid #BC977C;
 						border-radius: 38px;`
 		;
+	   	board3.style = `
+						box-sizing: border-box;
+	   					margin-top: -2000px;
+						vertical-align: middle;
+	  					text-align: center;
+						line-height: normal;
+	  					font-family: Monospace;
+	  					font-size: 25px;
+						color: #BC977C;
+
+						position: absolute;
+						width: 157px;
+						height: 160px;
+						right: calc(50% - 157px/2);
+						top: calc(50% - 160px/2 - 222px);
+
+						background: #8E715C;
+						border: 8px solid #BC977C;
+						border-radius: 38px;`
+		;
 		playBtn.style = `
 						position: absolute;
 						width: 110px;
@@ -142,9 +176,29 @@ color: white;
 						background: #9F9F9F;
 					`
 		;
+	  	bar4.style = `
+						position: absolute;
+						width: 22px;
+						height: 2483px;
+						right: calc(50% - 22px/2);
+						top: calc(50% - 2483px/2 - 1542px);
+	  					margin-top: -2000px;
+
+						background: #9F9F9F;
+					`
+		;
 	
 		boardText.innerHTML = "P I E T E R<br> M A L A N";
+		board3.innerHTML = "<br><b>Click to proceed<b>";
+		wip.innerHTML = "<b>Work in progress</b>";
 		playBtn.src = "play.svg";
+
+		// add particles
+		function addParticles(){
+
+		};
+
+		addParticles();
 
 		// add animations
 		playBtn.onmouseover = function(){
@@ -178,6 +232,13 @@ color: white;
 			bar.style.transition = transitionStart;
 			bar2.style.transition = transitionStart;
 			bar3.style.transition = transitionStart;
+	
+			// release info board
+			document.body.appendChild(bar4);
+			document.body.appendChild(board3);
+			
+			board3.style.transition = "all 1.5s";
+			bar4.style.transition = "all 1.5s";
 
 			setTimeout(function(){
 					marginStart = "-2000px";
@@ -197,6 +258,16 @@ color: white;
 					grass.style.transition = transitionStart;
 					grassShadow.style.transition = transitionStart;
 					dirt.style.transition = transitionStart;
+
+					// info board anim
+					bar4.style.marginTop = "0";
+					board3.style.marginTop = "0";
+					
+					// play game using scroll event
+					window.onclick = function(e){
+						bar4.style.transform = "translateY(-2000px)";
+						board3.style.transform = "translateY(-2000px)";
+					};
 			}, 500);
 		}
 
@@ -204,6 +275,7 @@ color: white;
 		playBtn.onclick = function(){startGame();}
 
 		// append the elements
+		document.body.appendChild(wip);
 		document.body.appendChild(grass);
 		document.body.appendChild(grassShadow);
 		document.body.appendChild(dirt);
@@ -215,7 +287,7 @@ color: white;
 		document.body.appendChild(bar2);
 		document.body.appendChild(bar3);
 	}
-
+	
 	window.onload = loadMenu();
 </script>
 </body>
